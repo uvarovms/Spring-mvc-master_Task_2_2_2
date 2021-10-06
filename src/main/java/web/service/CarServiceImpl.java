@@ -1,9 +1,10 @@
-package service;
+package web.service;
 
-import dao.CarDao;
-import model.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import web.dao.CarDao;
+import web.model.Car;
+
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public List<Car> getListCars(int count) {
-        return carDao.getListCars(count);
+    public List<Car> getListCars(int count){
+    return carDao.getListCars(count);
     }
 }

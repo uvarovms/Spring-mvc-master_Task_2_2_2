@@ -1,4 +1,6 @@
-package model;
+package web.model;
+
+import org.springframework.stereotype.Component;
 
 public class Car {
 
@@ -6,8 +8,6 @@ public class Car {
     private String body;
     private double engine;
 
-//    public Car() {
-//    }
 
     public Car(String model, String body, double engine) {
         this.model = model;
@@ -41,10 +41,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", body='" + body + '\'' +
-                ", engine=" + engine +
-                '}';
+        return model + ',' +
+                " " + body + ',' +
+                " " + engine + "V";
     }
 }

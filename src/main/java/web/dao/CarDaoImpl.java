@@ -1,14 +1,14 @@
-package dao;
+package web.dao;
 
-import model.Car;
 import org.springframework.stereotype.Repository;
+import web.model.Car;
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
 public class CarDaoImpl implements CarDao {
 
-    private static final List<Car> listCars = new ArrayList<Car>();
+    private static final List<Car> listCars = new ArrayList<>();
 
     static {
         listCars.add(new Car("Toyota", "sedan", 2.2));
