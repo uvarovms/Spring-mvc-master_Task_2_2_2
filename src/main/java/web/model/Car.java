@@ -6,8 +6,8 @@ public class Car {
     private String body;
     private double engine;
 
-    public Car() {
-    }
+//    public Car() {
+//    }
 
     public Car(String model, String body, double engine) {
         this.model = model;
